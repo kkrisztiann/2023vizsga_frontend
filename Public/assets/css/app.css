@@ -1,0 +1,18 @@
+body{
+    background-color: aliceblue;
+}
+header{
+    background-color: lightblue;
+    text-align: center;
+}
+nav{
+    background-color: lightgrey;
+}
+div{
+    background-color: grey;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

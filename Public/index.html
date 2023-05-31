@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu" ng-app="vizsgaApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+<h1> {{ apptitle }}</h1>
+            <h5>Frontend programozás - vizsgafeladat 2023.</h5>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menü</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#!/koncertek">Koncertlista</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!/fellepok">Fellépők</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!/jegyek">Jegyvásárlás</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main ng-view> </main>
+
+        <footer> {{appcompany}} - {{appauthor}}</footer>
+    </div>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/angular.min.js"></script>
+    <script src="./assets/js/angular-route.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/dbFactory.js"></script>
+    <script src="./controllers/fellepoCtrl.js"></script>
+    <script src="./controllers/jegyCtrl.js"></script>
+    <script src="./controllers/koncertCtrl.js"></script>
+
+</body>
+
+</html>
